@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Search Engine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+          <img class="image-container" src="images/logo-white.svg" alt="" />
+        <div class="title-container">
+          <h1>Simple Video Search Engine</h1>
+        </div>
+      </div>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search videos..." />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <main>
+      <div class="box" id="results"></div>
+      <div id="pagination">
+        <button id="prev-btn" disabled>Prev</button>
+        <button id="next-btn" disabled>Next</button>
+      </div>
+    </main>
+    <div id="preview-overlay">
+      <div id="preview-content">
+        <button id="visit-btn">Visit</button>
+        <button id="close-btn">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
